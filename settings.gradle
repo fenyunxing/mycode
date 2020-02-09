@@ -1,0 +1,2 @@
+include ':shiftactivity', ':progressbar and dialog', ':listViewOption', ':gridviewoption', ':fragmenttest', ':recyclerviewoption', ':broadcastreceiverttest', ':localbroadcasttest', ':sharedpreferencetest', ':sqlitedatabasetest', ':litepaltest', ':pemissiontest', ':speakrecongnize'
+rootProject.name='My Application'

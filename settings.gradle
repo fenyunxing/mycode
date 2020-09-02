@@ -1,2 +1,2 @@
-include ':shiftactivity', ':progressbar and dialog', ':listViewOption', ':gridviewoption', ':fragmenttest', ':recyclerviewoption', ':broadcastreceiverttest', ':localbroadcasttest', ':sharedpreferencetest', ':sqlitedatabasetest', ':litepaltest', ':pemissiontest', ':speakrecongnize'
+include ':shiftactivity', ':progressbar and dialog', ':listViewOption', ':gridviewoption', ':fragmenttest', ':recyclerviewoption', ':broadcastreceiverttest', ':localbroadcasttest', ':sharedpreferencetest', ':sqlitedatabasetest', ':litepaltest', ':pemissiontest', ':speakrecongnize', ':observermodetest', ':bottom_actionbar', ':animationtest', ':viewpagertest'
 rootProject.name='My Application'

@@ -21,7 +21,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //获取整个item布局，并生成一个view来装它
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item2, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_layout, parent, false);
         ViewHolder holder = new ViewHolder(view);//将item布局的view传给ViewHolder处理
         //设置整个item控件点击监听
         holder.iv.setOnClickListener(new View.OnClickListener() {

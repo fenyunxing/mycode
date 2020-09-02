@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView=(RecyclerView)findViewById(R.id.recycler_view);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         //当要设置成水平列表要加上这句代码，默认是竖直方向
-        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        recyclerView.setLayoutManager(linearLayoutManager);
+       linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+       recyclerView.setLayoutManager(linearLayoutManager);
         FruitAdapter adapter=new FruitAdapter(fruitList);
         recyclerView.setAdapter(adapter);
 

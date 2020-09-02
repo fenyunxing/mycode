@@ -194,25 +194,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.message_iv:
                 message2.what=1;
                 handler.sendMessage(message2);
-
+                mViewPager.setCurrentItem(0);
                 break;
             case R.id.user_iv:
                 message2.what=2;
                 handler.sendMessage(message2);
-
+                mViewPager.setCurrentItem(1);
 
                 break;
             case R.id.find_iv:
                 message2.what=3;
                 handler.sendMessage(message2);
-
+                mViewPager.setCurrentItem(2);
 
                 break;
             case R.id.more_iv:
                 message2.what=4;
                 handler.sendMessage(message2);
-                mPositon=3;
-
+                mViewPager.setCurrentItem(3);
                 break;
         }
     }

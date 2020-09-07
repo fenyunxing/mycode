@@ -64,7 +64,7 @@ public class RightNavigationBar extends View {
                     if (y1 > i * mHight / 26 && y1 < (i + 1) * mHight / 26) { //判断是否在第一格
                         Log.d("点击测试", indexword[i]);
                         ycount = i; //记录点击的是那个格子位置
-                        mListener.setDiaplayData(ycount,indexword[ycount]);
+                        mListener.setClickDiaplayData(ycount,indexword[ycount]);
                         invalidate(); //更新
                         break;
                     }
@@ -79,7 +79,7 @@ public class RightNavigationBar extends View {
                         Textcontent = indexword[i];
                         //visiableFlag=true;
                         if (mListener != null) {
-                            mListener.setDiaplayData(i,Textcontent);
+                            mListener.setMoveDiaplayData(i,Textcontent);
                         }
 
                         break;
@@ -126,7 +126,8 @@ public class RightNavigationBar extends View {
     }
 
     public interface MyClickListener {
-        void setDiaplayData(int position,String data);
+        void setMoveDiaplayData(int position,String data);
+        void setClickDiaplayData(int position,String data);
 
     }
 

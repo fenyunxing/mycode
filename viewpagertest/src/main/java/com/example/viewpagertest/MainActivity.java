@@ -210,8 +210,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.more_iv:
                 message2.what=4;
-                handler.sendMessage(message2);
-                mViewPager.setCurrentItem(3);
+                handler.sendMessage(message2);  mViewPager.setCurrentItem(3);
+
                 break;
         }
     }

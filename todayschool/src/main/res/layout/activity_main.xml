@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_rebuild2"
+    tools:context=".MainActivity">
+
+    <!--日期行-->
+    <LinearLayout
+        android:layout_marginTop="240dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <!--左边时间-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/day_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:text="10月2日"
+                android:textSize="29sp"
+                android:textColor="@color/qianhong"
+                android:gravity="center_vertical"
+                />
+        </RelativeLayout>
+       <!--右边时间-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+          <TextView
+              android:id="@+id/time_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="18dp"
+              android:text="09:58"
+              android:textSize="27sp"
+              android:clickable="true"
+              android:textColor="@color/heise"
+              android:gravity="center_vertical"
+              />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--倒计时-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/downcount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@color/shenhong"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
